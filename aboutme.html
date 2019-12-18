@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>Austin Cheung</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{background-image: url("background.jpg")}
+</style>
+<link rel="stylesheet" type="text/css" href="stylesheet2.css">
+</head>
+
+  <body style = "background-position:center; background-size: cover; background-repeat:no-repeat; background-attachment: fixed">
+
+    <div id="navbar">
+      <a href="index.html" style="position:relative; top:1%; left:70%;color: rgb(255,255,255)">Home</a>
+      <a href="aboutme.html" style="position:relative; top:1%; left:70%;color: rgb(255,255,255)">About Me</a>
+      <a href="https://drive.google.com/file/d/1yf6aMp5S_-fjs0al9f74dKTHOAPl2n1M/view?usp=sharing" style="position:relative; top:1%; left:70%;color: rgb(255,255,255)"> Resume</a>
+      <a href="projects.html" style="position:relative; top:1%; left:70%;color: rgb(255,255,255)"> Projects</a>
+      <a href="contact.html" style="position:relative; top:1%; left:70%;color: rgb(255,255,255)"> Contact</a>
+    </div>
+
+
+
+
+<h2 style="color: #ffffff;position: absolute;; left:10%; top:15% ; font-size: 30px; font-family:helvetica"> About Me </h2>
+<dialog open style="position absolute; top: 23%; left: -40%; width: 900px; height: 135px; background-color:rgb(0,0,0,0.4)">
+<p style="color: #ffffff ;position: absolute; top:13%; left: 1%; font-family:helvetica">
+  I am a third year computer science student at Ryerson University.
+  I am interested in going into network security and am currently looking for an intership for the summer of 2020.
+  My dream job is to one day be able to work in the field of network security,
+  protecting the things that are meant to be protected and preventing any attack on the information.
+  I am always </br> eager to learn and create new projects with the knowledge that I have aquired.
+</p>
+</dialog>
+
+<h2 style="color: #ffffff;position: absolute;; left:10%; top:40% ; font-size: 30px; font-family:helvetica"> Goals </h2>
+
+<dialog open style="position: absolute; top: 47%; left: -40%; width: 900px;height: 135px ;background-color: rgb(0,0,0,0.4)">
+<p style="color: #ffffff ;position: absolute; left:8% ; font-size: 18px; font-family:helvetica">
+  Personal Goals:
+  <ul style="color: #ffffff ;position: absolute; left:8%; top:30% ; font-size: 18px; font-family:helvetica">
+  <li> Maintaining a healthy lifestyle </li>
+  <li> Improving my badminton skills </li>
+  <li> Create a better relationship with my peers </li>
+  </ul>
+</p>
+
+
+<p style="color: #ffffff ;position:absolute; left:60%;top: 6%; font-size: 18px; font-family:helvetica">
+  Academic Goals:
+  <ul style="color: #ffffff ;position: absolute; left:60%; top:30% ; font-size: 18px; font-family:helvetica">
+  <li> Maintian accademic standing </li>
+  <li> Improve study habits </li>
+  <li> Attend more hackathons </li>
+</ul>
+</p>
+</dialog>
+
+<h2 style="color: #ffffff;position: absolute; left:10%; top:65% ; font-size: 30px; font-family:helvetica"> Hobbies </h2>
+<dialog open style="position: absolute; top: 73%; left: -40%; width: 900px;height: 130px ;background-color: rgb(0,0,0,0.4)">
+  <p style="color: #ffffff ;position: absolute; left:8% ; font-size: 18px; font-family:helvetica">
+      <ul style="color: #ffffff ;position: absolute; left:8% ; font-size: 18px; font-family:helvetica">
+        <li> Cars</li>
+        <li> Fitness</li>
+        <li> Compters</li>
+        <li> Gaming </li>
+      </ul>
+
+      <ul style="color: #ffffff ;position: relative; left:60% ; font-size: 18px; font-family:helvetica">
+      <li> Sports </li>
+      <li> Photography </li>
+      <li> Coding </li>
+      <li> Cooking </li>
+    </ul>
+  </dialog>
+<img src="border.png" style="width:38%; height:auto; position: absolute; left:59.7%; top:24.7%">
+
+    <div class="slideshow-container" style="position relative; top:17.5%">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade round rounded-corners-gradient-borders">
+        <img class="small" src="pic1.jpg" style=" position: absolute; left:75%; top:100%">
+      </div>
+
+      <div class="mySlides fade round rounded-corners-gradient-borders">
+        <img class="small" src="pic2.jpg" style="position: absolute; left:75%; top:100%">
+      </div>
+
+      <div class="mySlides fade round rounded-corners-gradient-borders">
+        <img class="small" src="pic3.jpg" style="position: absolute; left:75%; top:100%">
+      </div>
+
+      <div class="mySlides fade round rounded-corners-gradient-borders">
+        <img class="small" src="pic4.jpg" style="position: absolute; left:75%; top:100%">
+      </div>
+
+    </div>
+    <br>
+
+
+
+    <script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000);
+}
+
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+
+</script>
+
+
+
+      </body>
+  </html>
