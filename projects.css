@@ -75,3 +75,43 @@
   transform: translate(-50%, -50%);
 
 }
+
+.containerm {
+  position: relative;
+  width: 80%;
+
+}
+
+.imagem {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlaym {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.containerm:hover .overlaym {
+  opacity: 0.9;
+}
+
+.textm {
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 37%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
